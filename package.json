@@ -1,0 +1,18 @@
+{
+  "name": "cypressdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "npx cypress run --spec \"cypress/e2e/Tests/*.cy.js\" --headed --browser firefox",
+    "chrome": "npx cypress run --spec \"cypress/e2e/Tests/*.cy.js\" --headed --browser chrome",
+    "gettingstarted": "npx cypress run --spec \"cypress/e2e/1-getting-started/*.cy.js",
+    "record": "npx cypress run --record --key 2f71d7b3-3132-4282-ab79-3687cbebf30c --headed --spec cypress/e2e/Tests/*.cy.js"
+  },
+  "author": "Ryan Anderson",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.7.0",
+    "cypress-grep": "^3.0.3"
+  }
+}
